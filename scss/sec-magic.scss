@@ -1,0 +1,42 @@
+.magic {
+    background-color: #F6F8FA;
+}
+
+.magic__container {
+    max-width: 1440px;
+    margin: 0 auto 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    h2 {
+        position: relative;
+        &::after {
+            @include line;
+            top: 160px;
+        }
+    }
+}
+
+.magic__img {
+    background-image: url(../img/magic.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 840px;
+}
+
+.magic__inner {
+    padding: 100px 130px 0 130px;
+    h2 {
+        margin-bottom: 85px;
+    }
+    p {
+        color: #373A39;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    p + p {
+        padding-top: 20px;
+    }
+}

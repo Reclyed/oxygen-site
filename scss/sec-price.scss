@@ -1,0 +1,93 @@
+.price {
+    h2 {
+        position: relative;
+        &::after {
+            @include line;
+        }
+    }
+    padding: 144px 0px 162px;
+    background-color: #F6F8FA;
+}
+
+.price .section-title {
+    margin-bottom: 110px;
+}
+
+.price__inner {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.price__card {
+    text-align: center;
+    width: 370px;
+    padding: 25px;
+    background-color: #FFF;
+}
+
+.price__card-name {
+    text-align: left;
+    color: #242121;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.price__card-price {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.price-dol {
+    padding-top: 9px;
+    color: #242121;
+    font-family: 'Open Sans';
+    font-size: 40px;
+    font-weight: 300;
+}
+.price-num {
+    color: #242121;
+    font-family: 'Open Sans';
+    font-size: 80px;
+    font-weight: 300;
+}
+.price-mon {
+    padding-bottom: 5px;
+    align-self: flex-end;
+    color: #242121;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.price__card-text {
+    color: #242121;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    & + & + & + & + & {
+        margin-bottom: 70px;
+    }
+}
+
+.price__card-btn {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #242121;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    position: relative;
+    &::before {
+        @include beforeForHover;
+    }
+    &:hover::before {
+        width: 120%;
+    }
+}

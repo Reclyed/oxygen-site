@@ -1,0 +1,43 @@
+.team {
+    margin-bottom: 164px;
+    h2 {
+        position: relative;
+        &::after {
+            @include line;
+        }
+    }
+}
+
+.team .section-title {
+    margin-bottom: 120px;
+}
+
+.team__inner {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.card-box {
+    text-align: center;
+}
+
+.card-box__img {
+    margin-bottom: 35px;
+}
+
+.card-box__name {
+    color: #333;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-box__text {
+    color: #C2C2C2;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 300;
+}

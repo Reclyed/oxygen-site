@@ -1,0 +1,41 @@
+.about {
+    padding-top: 150px;
+    background: #F6F8FA;
+    margin-bottom: 140px;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.about__title {
+    color: #242121;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: -1.65px;
+    position: relative;
+    &::after {
+        @include line;
+    }
+}
+
+.about__inner-box {
+    max-width: 790px;
+    padding: 10px;
+    :last-child {
+        padding-top: 20px;
+    }
+    padding-bottom: 160px;
+}
+
+.about__inner-text {
+    color: #373A39;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}

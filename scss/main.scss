@@ -1,0 +1,49 @@
+@mixin line {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #FCBB08;
+    top: 90px;
+    left: 0;
+}
+
+@mixin beforeForHover {
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FCBB08;
+    left: 50%;
+    top: 150%;
+    transform: translateX(-50%);
+    transition: width .3s ease;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1150px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #242121;
+    font-family: 'Montserrat';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: -1.65px;
+}
+
+@import 'header.scss', 'sec-about.scss', 'sec-expertise.scss', 'sec-magic.scss', 'sec-portfolio.scss', 'sec-team.scss', 'sec-slider.scss', 'sec-price.scss', 'sec-get.scss', 'footer.scss';
